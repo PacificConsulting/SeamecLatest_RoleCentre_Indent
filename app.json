@@ -1,0 +1,38 @@
+{
+  "id": "4ab9da24-f80c-45ef-a45d-4d085faf13fa",
+  "name": "RoleCentre_Indent",
+  "publisher": "Pacific",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+    {
+      "id": "b42afbbe-0e79-48cb-a069-79a30045806a",
+      "name": "Seamec-Indent Extension",
+      "publisher": "Default publisher",
+      "version": "1.0.0.0"
+    }],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "20.0.0.0",
+  "idRanges": [
+    {
+      "from": 5000,
+      "to": 99999
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "9.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
