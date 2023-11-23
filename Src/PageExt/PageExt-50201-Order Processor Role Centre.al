@@ -82,7 +82,68 @@ pageextension 50201 "Role Center for Page" extends "Order Processor Role Center"
                     Image = EditList;
                     RunObject = page "RFQ List";
                 }
+                action(ArchiveRFQ)
+                {
+                    ApplicationArea = Basic, Suite;
+                    Caption = 'Archive RFQ';
+                    Image = EditList;
+                    RunObject = Page "Archive RFQ";
+                }
+                action(ArchiveIndent)
+                {
+                    ApplicationArea = Basic, Suite;
+                    Caption = 'Archive Indent';
+                    Image = EditList;
+                    RunObject = page "Archive Indent";
+                }
+
             }
+            group("Preventive Maintenance")
+            {
+                action("Equipment Master List")
+                {
+                    ApplicationArea = Bsic, Suite;
+                    Caption = 'Equipment Master List';
+                    Image = EditList;
+                    RunObject = page "Equipment Master List";
+                }
+                action("Counter Master List")
+                {
+                    ApplicationArea = Bsic, Suite;
+                    Caption = 'Counter Master List';
+                    Image = EditList;
+                    RunObject = page "Counter Master List";
+                }
+                action("Maintenance Schedule List")
+                {
+                    ApplicationArea = Bsic, Suite;
+                    Caption = 'Maintenance Schedule List';
+                    Image = EditList;
+                    RunObject = page "Maintenance Schedule List";
+                }
+                action("PMS Job List")
+                {
+                    ApplicationArea = Bsic, Suite;
+                    Caption = 'Work Order List';
+                    Image = EditList;
+                    RunObject = page "PMS Job List";
+                }
+                action("Closed PMS Job List")
+                {
+                    ApplicationArea = Bsic, Suite;
+                    Caption = 'Closed Work Order List';
+                    Image = EditList;
+                    RunObject = page "Closed PMS Job List";
+                }
+                action("Task Master List")
+                {
+                    ApplicationArea = Bsic, Suite;
+                    Caption = 'Task Master List';
+                    Image = EditList;
+                    RunObject = page "Task Master";
+                }
+            }
+
             group(FinanceXMLPorts)
             {
                 Caption = 'Finance XML Ports';
@@ -124,7 +185,7 @@ pageextension 50201 "Role Center for Page" extends "Order Processor Role Center"
                     Caption = 'GST Item Master Upload';
                     RunObject = xmlport "GST Item Master Upload";
                 }
-                action(GSTCustomerMaster) 
+                action(GSTCustomerMaster)
                 {
                     ApplicationArea = Basic, suite;
                     Image = EditList;
@@ -143,7 +204,8 @@ pageextension 50201 "Role Center for Page" extends "Order Processor Role Center"
                     ApplicationArea = Basic, suite;
                     Image = EditList;
                     Caption = 'Salary Upload 1';
-                    RunObject = xmlport "Salary Upload 1";
+                    //RunObject = xmlport "Salary Upload 1";
+                    RunObject = xmlport "Salary Upload1";
                 }
                 action(BankPaymentRTGSNEFT)
                 {
@@ -157,8 +219,17 @@ pageextension 50201 "Role Center for Page" extends "Order Processor Role Center"
                     ApplicationArea = Basic, suite;
                     Image = EditList;
                     Caption = 'GL Entry';
-                    RunObject = xmlport "G/L Entry";
+                    //RunObject = xmlport "G/L Entry";
+                    RunObject = xmlport "G/L Entry 1";
                 }
+                action("Purchase Data Upload")
+                {
+                    ApplicationArea = Basic, Suite;
+                    Image = EditList;
+                    Caption = 'Purchase  Data Upload';
+                    RunObject = xmlport "Purchase Document Upload";
+                }
+
                 action(ITems1)
                 {
                     ApplicationArea = Basic, suite;
@@ -166,6 +237,13 @@ pageextension 50201 "Role Center for Page" extends "Order Processor Role Center"
                     Caption = 'ITems';
                     RunObject = xmlport ITems;
                 }
+                /* action(PurchaseUpload)
+                {
+                    // ApplicationArea = Basic, suite;
+                    // Image = EditList;
+                    // Caption = 'Purchase Data Upload';
+                    // //RunObject = xmlport pu;
+                } */
             }
         }
     }
